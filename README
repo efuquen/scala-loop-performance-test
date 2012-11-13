@@ -1,0 +1,20 @@
+Simple performance test between a while loop, for comprehension, and a foreach loop.  Loops through a list of 1 million, 10 million, 100 million, and 1 billion.  Results of a single run below:
+
+> run
+[info] Running com.livestream.perf.Main 
+WhileLoop   1000000 iterations took 8 ms
+ForLoop     1000000 iterations took 11 ms | Percentage Increase: 37% Total Increase: 3 ms
+ForEachLoop 1000000 iterations took 10 ms | Percentage Increase: 25% Total Increase: 2 ms
+
+WhileLoop   10000000 iterations took 30 ms
+ForLoop     10000000 iterations took 74 ms | Percentage Increase: 146% Total Increase: 44 ms
+ForEachLoop 10000000 iterations took 71 ms | Percentage Increase: 136% Total Increase: 41 ms
+
+WhileLoop   100000000 iterations took 290 ms
+ForLoop     100000000 iterations took 696 ms | Percentage Increase: 140% Total Increase: 406 ms
+ForEachLoop 100000000 iterations took 710 ms | Percentage Increase: 144% Total Increase: 420 ms
+
+WhileLoop   1000000000 iterations took 2830 ms
+ForLoop     1000000000 iterations took 7046 ms | Percentage Increase: 148% Total Increase: 4216 ms
+ForEachLoop 1000000000 iterations took 7055 ms | Percentage Increase: 149% Total Increase: 4225 ms
+
